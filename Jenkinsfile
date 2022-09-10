@@ -20,7 +20,7 @@ stages{
 
   stage('CheckOutCode'){
     steps{
-    git branch: 'development', credentialsId: '957b543e-6f77-4cef-9aec-82e9b0230975', url: 'https://github.com/devopstrainingblr/maven-web-application-1.git'
+    git branch: 'master', credentialsId: '957b543e-6f77-4cef-9aec-82e9b0230975', url: 'https://github.com/veeruat/maven-web-application.git'
 	
 	}
   }
@@ -52,7 +52,7 @@ stages{
   }
   */
 }//Stages Closing
-
+/*
 post{
 
  success{
@@ -68,6 +68,7 @@ post{
           body: "Pipeline Build is over .. Build # is ..${env.BUILD_NUMBER} and Build status is.. ${currentBuild.result}.",
           replyTo: 'devopstrainingblr@gmail.com'
  }
+ */
  
 }
 
