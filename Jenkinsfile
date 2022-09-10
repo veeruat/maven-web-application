@@ -3,7 +3,7 @@ pipeline{
 agent any
 
 tools{
-mvn 'Maven 3.6.3'
+/usr/share/maven 'Maven 3.6.3'
 
 }
 
